@@ -1,3 +1,5 @@
+#Print the following pattern for the given number of rows.
+
 #1111
 #000
 #11
