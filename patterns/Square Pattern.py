@@ -1,7 +1,9 @@
-4444
-4444
-4444
-4444
+#Print the following pattern for the given N number of rows
+
+#4444
+#4444
+#4444
+#4444
 
 N=int(input())
 i=1
