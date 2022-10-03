@@ -1,3 +1,5 @@
+#Print the following pattern for the given N number of rows
+
 #*
 #**
 #***
