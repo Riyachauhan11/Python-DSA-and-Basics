@@ -1,3 +1,6 @@
+#printing numbers from 1 to n
+#printing numbers from n to 1
+
 def one_to_n(n):
     if n==0:
         return 
