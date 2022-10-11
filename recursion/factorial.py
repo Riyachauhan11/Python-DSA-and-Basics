@@ -1,5 +1,6 @@
-#to avoid max recursion depth exceeded error in our program
-#when we input large numbers, we can use the following
+#finding factorial of n 
+'''to avoid max recursion depth exceeded error in our program
+#when we input large numbers, we can use the following'''
 import sys
 sys.setrecursionlimit(10000)
 
