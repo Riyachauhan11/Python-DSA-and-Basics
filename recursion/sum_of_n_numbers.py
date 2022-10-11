@@ -1,3 +1,5 @@
+#to print sum of first n natural numbers
+
 def sum_n(n):
     if n==0: #base case
         return 0
