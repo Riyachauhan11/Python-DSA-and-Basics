@@ -27,7 +27,7 @@ x=int(input())
 print(firstIndex(arr, x))
 
 
-'''using starting index (better solution)'''
+'''using starting index (better solution - explained why in check_sorted_list.py)'''
 def firstIndex(arr, x,si):
     # Please add your code here
     l=len(arr)
