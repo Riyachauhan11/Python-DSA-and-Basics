@@ -1,3 +1,8 @@
+#Given an array of length N and an integer x, you need to find and return the first index of integer x 
+#present in the array. Return -1 if it is not present in the array.
+#First index means, the index of first occurrence of x in the input array.
+#Do this recursively. Indexing in the array starts from 0.
+
 '''using list slicing'''
 def firstIndex(arr, x):
     # Please add your code here
