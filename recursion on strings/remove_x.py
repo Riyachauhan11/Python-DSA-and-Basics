@@ -1,5 +1,5 @@
 #Given a string, compute recursively a new string where all 'x' chars have been removed.
-# Problem: Remove x from string
+
 def removeX(string): 
     if len(string)==0:
         return string
