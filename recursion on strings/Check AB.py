@@ -23,3 +23,25 @@ if checkAB(s):
     print('true')
 else:
     print('false')
+    
+
+# another solution
+def check_ab(string):
+    l=len(string)
+    if l==0:
+        return 'true'
+    if l==1 and string[0]=='a':
+        return 'true'
+    if string[0]=='b' and string[0]!=string[1]:
+        return 'false'
+    if string[0]=='a':
+        return check_ab(string[1:])
+    elif string[0:2]=='bb':
+        return check_ab(string[2:])
+    
+            
+string=input()
+if string[0]=='b':
+    print('false')
+else:
+    print(check_ab(string))
