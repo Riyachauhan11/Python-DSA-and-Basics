@@ -26,3 +26,24 @@ for i in range(t):
     arr=[int(x) for x in input().split()]
     unique=findUnique(arr,n)
     print(arr[unique])
+    
+    
+    ---------------------------------------------
+    
+    # better solution as per space and time complexity
+    
+    def findUnique(arr, n):
+    #Your code goes here
+    i=0
+    if n==1:
+        print(arr[0])
+    while i<n-1:
+        if arr[i]==arr[i+1]:
+            i+=2
+            if i==n-1:
+                if arr[i]!=arr[i-1]:
+                    print(arr[i])
+                    break
+        else:
+            print(arr[i])
+            break
