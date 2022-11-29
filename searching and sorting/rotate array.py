@@ -22,3 +22,16 @@ for i in range(t):
     for ele in arr:
        print(ele,end=' ')
     print()
+    
+------------------------------------------------------------------------------------
+
+#easier soln
+
+def rotate (arr, n, d):
+    arr.reverse()
+    part_1=arr[0:(n-d)]
+    part_2=arr[(n-d):]
+    part_1.reverse()
+    part_2.reverse()
+    return part_1+part_2
+
