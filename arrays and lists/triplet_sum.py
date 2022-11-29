@@ -35,3 +35,84 @@ for i in range(t):
         print(triplets)
     else:
         print(0)
+        
+
+-----------------------------------------------------------------------------------
+
+from sys import *
+
+def triplet_sum(arr, n, target):
+
+    num_triplets = 0
+    arr.sort()
+
+    for i in range(n):
+        pair_sum_for = target-arr[i]
+        num_pairs = Pair_Sum(arr, i+1, n-1, pair_sum_for)
+        # i+1 --> si and n-1 --> ei
+        num_triplets += num_pairs
+
+    return num_triplets
+
+
+def Pair_Sum(arr, i, j, num):
+
+    count = 0
+
+    while i < j:
+        if arr[i]+arr[j] < num:
+            i += 1
+        elif arr[i]+arr[j] > num:
+            j -= 1
+        else:
+            initial_left_element = arr[i]
+            initial_left_index = i
+
+            initial_right_element = arr[j]
+            initial_right_index = j
+
+            while i < j and arr[i] == initial_left_element:
+                i += 1
+            while j >= i and arr[j] == initial_right_element:
+                j -= 1
+
+            if initial_left_element == initial_right_element:
+                equal_numbers = (i-initial_left_index) + \
+                    (initial_right_index-j)-1
+                count += ((equal_numbers)*(equal_numbers+1))//2
+
+            else:
+                count += (i-initial_left_index)*(initial_right_index-j)
+
+    return count
+
+
+
+
+#taking input using fast I/O method
+def takeInput() :
+    n = int(stdin.readline().strip())
+    if n == 0 :
+        return list(), 0
+
+    arr = list(map(int, stdin.readline().strip().split(" ")))
+    return arr, n
+
+
+def printList(arr, n) : 
+    for i in range(n) :
+        print(arr[i], end = " ")
+    print()
+
+
+#main
+t = int(stdin.readline().strip())
+
+while t > 0 :
+    
+    arr, n = takeInput()
+    num = int(stdin.readline().strip())
+    print(triplet_sum(arr, n, num))
+
+    t -= 1
+
