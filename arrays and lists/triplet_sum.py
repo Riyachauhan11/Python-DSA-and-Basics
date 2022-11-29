@@ -39,6 +39,14 @@ for i in range(t):
 
 -----------------------------------------------------------------------------------
 
+# better soln
+
+'''
+Time complexity - O(n^2)
+Space complexity - O(1)
+where n is the size of input arr/list
+'''
+
 from sys import *
 
 def triplet_sum(arr, n, target):
