@@ -100,3 +100,23 @@ while t > 0 :
     printLinkedList(head)
 
     t -= 1
+    
+    
+-------------------------------------------------------------------------------------------
+
+# recursively :
+
+def deleteNodeRec(head, pos) :
+	#Your code goes here
+    if pos<0:
+        return head
+    if head is None:
+        return None
+    if pos==0:
+        head=head.next
+        return head
+
+    small_head=deleteNodeRec(head.next,pos-1)
+    head.next=small_head
+    return head
+    
