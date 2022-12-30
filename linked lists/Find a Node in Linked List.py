@@ -41,6 +41,21 @@ def findNode(head, n):
     return -1
 
 
+
+def findNodeRec(head, n) :
+	#Your code goes here
+    if head == None:
+        return -1
+    if head.data == n:
+        return 0
+    index= findNodeRec(head.next,n)
+    if index != -1:
+        return index+1
+    else:
+        return -1
+    
+
+
 # Taking Input Using Fast I/O.
 def takeInput():
     head = None
