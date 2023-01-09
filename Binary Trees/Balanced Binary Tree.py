@@ -1,6 +1,8 @@
 #a binary tree is balanced if the difference b/w the height of left tree of a node 
 #and right tree of the same node is not greater than 1
 
+'''check if given binary tree is balanced or not'''
+
 class BinaryTreeNode:
     def __init__(self, data):
         self.data = data
