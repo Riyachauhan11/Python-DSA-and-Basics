@@ -1,3 +1,6 @@
+'''checking if given binary tree is a BST'''
+
+
 import queue
 
 class BinaryTreeNode:
