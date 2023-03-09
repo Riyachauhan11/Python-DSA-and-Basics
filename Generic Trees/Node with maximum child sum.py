@@ -1,5 +1,15 @@
 '''Given a generic tree, find and return the node for which sum of its data and data of all its child nodes is maximum. 
-In the sum, data of the node and data of its immediate child nodes has to be taken.'''
+In the sum, data of the node and data of its immediate child nodes has to be taken.
+
+Sample Input 1 :
+
+5 3 1 2 3 1 15 2 4 5 1 6 0 0 0 0
+
+Sample Output 1 :
+
+1
+
+'''
 
 rom sys import stdin,setrecursionlimit
 setrecursionlimit(10**6)
