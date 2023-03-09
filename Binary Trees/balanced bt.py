@@ -1,3 +1,6 @@
+'''checking if a binary tree is balanced or not'''
+
+
 #a binary tree is balanced if the difference b/w the height of left tree of a node 
 #and right tree of the same node is not greater than 1
 
