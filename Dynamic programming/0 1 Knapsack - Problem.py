@@ -65,7 +65,7 @@ def knapsack(weights, values, n, maxWeight,i) :
   
 #BOTTOM UP APPRAOCH - dp
 def knapsackBU(weights, values, n, maxWeight) :
-    #Your code goes here
+    #+1 to avoid index error
     dp=[[0 for j in range(maxWeight+1)]for i in range(n+1)]
 
     for i in range(n-1,-1,-1):
