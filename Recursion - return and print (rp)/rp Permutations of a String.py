@@ -16,7 +16,7 @@ bca
 cab
 cba'''
 
-#RETURN FUNC
+#RETURN FUNC (BOTTOM UP APPROACH)
 def permutations(string):
     #Implement Your Code Here
     if len(string)==1:
@@ -47,7 +47,7 @@ for s in ans:
 
 
 
-#PRINT FUNC
+#PRINT FUNC (TOP DOWN APPROACH)
 def permutations(string,ans):
     #Implement Your Code Here
     if len(string)==0:
