@@ -27,7 +27,7 @@ cd
 ce
 cf'''
 
-#RETURN FUNC
+#RETURN FUNC (BOTTOM UP APPROACH)
 def getString(lastDig):
     if lastDig==2:
         return 'abc'
@@ -76,7 +76,7 @@ for s in ans:
     
     
     
-#PRINT FUNC
+#PRINT FUNC (TOP DOWN APPROACH)
 def getoption(lastDig):
     if lastDig==2:
         return 'abc'
