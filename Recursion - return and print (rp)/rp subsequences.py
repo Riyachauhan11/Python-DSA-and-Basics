@@ -1,4 +1,4 @@
-#RETURN FUNC
+
 ''' i) Given a string (let's say of length n), return all the subsequences of the given string.
     ii)Given a string (lets say of length n), print all the subsequences of the given string.
 
@@ -18,6 +18,7 @@ ac
 ab 
 abc '''
 
+#RETURN FUNC(BOTTOM UP APPROACH)
 def subsequences(string):
     #Implement Your Code Here
     if len(string)==0:
@@ -37,7 +38,7 @@ for ele in ans:
     print(ele)
     
     
-#PRINT FUNC
+#PRINT FUNC(TOP DOWN APPROACH)
 def subsequencesPrinted(inpu,outpu):
     if inpu=="":
         print(outpu)
