@@ -26,7 +26,7 @@ Sample Output:
 15 20 
 15 20 12'''
 
-#RETURN FUNC
+#RETURN FUNC(BOTTOM UP APPROACH)
 def subset(arr,ans_arr):
     if len(arr)==0:
         ans_arr.append([])
@@ -59,7 +59,7 @@ for i in range(len(ans)):
 
 
 
-#PRINT FUNC
+#PRINT FUNC(TOP DOWN APPRAOCH)
 def subset(arr,ans_arr):
     if len(arr)==0:
         for i in range(len(ans_arr)):
