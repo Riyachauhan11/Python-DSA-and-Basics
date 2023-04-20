@@ -163,9 +163,9 @@ target = int(target_k[0])
 k = int(target_k[1])
 
 nodeToRootPath = NodeToRootPath(root, target)
-print(nodeToRootPath)
+'''print(nodeToRootPath)
 for i in range(1, len(nodeToRootPath)):
-    print(nodeToRootPath[i][0].data, nodeToRootPath[i][1])
+    print(nodeToRootPath[i][0].data, nodeToRootPath[i][1])'''
 nodesAtDistanceK(root, target, k, nodeToRootPath)
 if k == 1:
     print(nodeToRootPath[1][0].data)
